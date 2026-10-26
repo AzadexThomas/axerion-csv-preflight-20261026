@@ -1,3 +1,7 @@
+# Try the browser edition
+
+[Open CSV preflight](https://axerion-csv-preflight-20261026.pages.dev/) — a static browser utility using local file processing. Source and limitations are in [browser/README.txt](browser/README.txt). No file upload or automatic cleanup. The browser edition uses JavaScript lowercase header comparison and has no required-column check; it differs from the Python CLI below.
+
 # CSV structural preflight
 
 An original AI-assisted Axerion LLC utility for inspecting a CSV **on your own
