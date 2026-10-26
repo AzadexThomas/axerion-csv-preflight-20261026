@@ -1,0 +1,40 @@
+CSV structural preflight - independent local validation
+Date: 2026-10-26
+Scope: Synthetic structural/CLI QA for the existing data-service offer.
+This is not customer acceptance, demand evidence, or a new revenue experiment.
+
+Runtime: Windows, Python 3.13.1; standard library only.
+Command: python -B -m unittest -v test_csv_preflight.py
+Actual result: Ran 24 tests in 4.040s; OK (skipped=1).
+23 passed, 0 failures, 0 errors, 1 skipped.
+Tool SHA256: 17F8823585733F3A9B5435048626FC1091B6B79E48D64DE2059E3D3607107A6B
+
+Verified through subprocess CLI calls with temporary synthetic inputs:
+- UTF-8 BOM/non-ASCII; quoted commas, escaped quotes, multiline fields.
+- Empty and casefold/trim duplicate headers; ragged rows; exact duplicate rows.
+- CSV record positions across physical multiline text; whitespace cells.
+- Conservative formula prefixes including negative numeric-looking strings.
+- Optional required-column matching and sanitized missing-column positions.
+- Empty input, malformed quotes, invalid UTF-8, NUL, representative binary bytes.
+- Reject above 2 MiB, 10000 data rows, 100 columns; accept those exact limits.
+- Bounded finding examples retain full counts.
+- JSON and HTML outputs omit synthetic private headers/cells, full input paths,
+  and adversarial SVG/script strings. A Python expression remains inert CSV data.
+- Source SHA256 is unchanged after every shared-helper invocation, including
+  errors and output attempts targeting input directly, normalized path or hardlink.
+- Existing report preservation; duplicate JSON/HTML target rejection; no report
+  on invalid input; sanitized missing-input/output-parent errors and exit codes.
+
+Limitations and observed facts:
+- Symlink alias test was skipped: Windows returned WinError 1314 when creating
+  the synthetic symlink. Direct and hardlink alias tests passed. Symlink behavior
+  therefore has not been established by execution in this environment.
+- HTML was checked as generated text; no browser rendering or JavaScript engine
+  was invoked. This is not a security audit or an import/business-accuracy test.
+- No concurrent filesystem race, disk-full, permission-change, or resource-
+  exhaustion testing was performed. Multiple report writes are not transactional:
+  an output I/O failure after the first report can leave that first report.
+- Only UTF-8 comma-delimited input in this runtime was tested. The tool documents
+  strict quote handling and conservatively flags formula-like negative values.
+- All fixtures were synthetic and temporary. No installs, network calls, account
+  writes, actual customer CSVs, or paid services were used by this validation.
