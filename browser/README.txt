@@ -1,3 +1,5 @@
+RETIRED October 27, 2026: CSV offer canceled; no service requests accepted. Hosted site removed. Source retained for reference only.
+
 CSV browser preflight — original Axerion, AI-assisted prototype
 
 Open index.html in a modern browser. No build, dependencies, packages, backend,
@@ -21,11 +23,7 @@ reports remain on the device. Browser/device memory disposal is browser-managed.
 
 Generic structural check only; no correctness, import, privacy or security
 guarantee. AI-generated code may have defects. Use synthetic/non-sensitive inputs.
-This free utility is separate from the existing USD25 scoped service. Paid scope
-inquiry CTA opens only before 2026-11-08 18:00 UTC using the device clock, updates
-every 30 seconds and on visibility changes, and defaults hidden without JS.
-Wrong device time can affect cutoff; server enforcement is not available here.
-Mailto has only static terms text, never file metadata or CSV values.
+The paid offer, contact CTA and scheduled offer timer have been removed.
 
 Manual QA:
 1. Open index.html; demo reports 4 data records, 4 header columns, repeated header,
@@ -40,7 +38,7 @@ Manual QA:
 6. Keyboard tab through controls, test mobile width, inspect live status/errors.
 7. Browser network tools show no processing requests. Inspect deployed response
    CSP, nosniff and Referrer-Policy. Local files do not apply _headers.
-8. Set test device time after cutoff: inquiry CTA hidden, closure visible.
+8. Retirement check: no paid CTA, mailto or offer timer remains.
 
 MIT License
 Copyright (c) 2026 Axerion LLC
