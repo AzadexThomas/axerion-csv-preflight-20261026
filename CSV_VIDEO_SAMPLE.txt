@@ -1,0 +1,15 @@
+ORIGINAL PORTFOLIO SAMPLE — OCTOBER 27, 2026
+
+A twenty-second, silent product walkthrough for Axerion's original CSV preflight utility. This newly made sample is not commissioned client work, a campaign case study, an endorsement, or evidence of sales. AI assisted the utility code, captions, renderer and edit. No stock footage, external music, customer records or paid generation was used.
+
+Three-shot plan:
+0–6 seconds: show the actual utility's opening screen and synthetic-demo control.
+6–14 seconds: show the actual synthetic report: four data records, four header columns and six findings.
+14–20 seconds: explain limits and supply the public utility address. Structural checking does not establish business correctness, import compatibility or security. Nothing is automatically rewritten.
+
+Production: capture the existing public utility before and after its synthetic-demo action; inspect the PNGs; render the captures and original captions to a 1280×900 canvas; encode locally with browser MediaRecorder; review decoded frames at 2, 10 and 17 seconds. The footage is an edited sequence of real still captures, not continuous screen recording. No voiceover or audio track was added. Source renderer and original captures are retained.
+
+Public utility: https://axerion-csv-preflight-20261026.pages.dev/
+Public source: https://github.com/AzadexThomas/axerion-csv-preflight-20261026
+
+Cost: no new purchase, paid API or generation credit. Existing Codex/browser/subscription allocation remains unknown and is not assumed free. This sample supports qualification for a specific product-video workflow-writing brief; it is not itself a new launched revenue experiment or paid delivery.
