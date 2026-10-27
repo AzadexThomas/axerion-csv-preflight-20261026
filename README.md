@@ -1,6 +1,6 @@
-# Try the browser edition
+# RETIRED — October 27, 2026
 
-[Open CSV preflight](https://axerion-csv-preflight-20261026.pages.dev/) — a static browser utility using local file processing. Source and limitations are in [browser/README.txt](browser/README.txt). No file upload or automatic cleanup. The browser edition uses JavaScript lowercase header comparison and has no required-column check; it differs from the Python CLI below.
+The CSV revenue offer has been canceled. No CSV services or new requests are accepted. The hosted website has been removed. This repository preserves original utility code, license, tests and historical source only; it is not an active business offer.
 
 # CSV structural preflight
 
@@ -54,28 +54,3 @@ still reveal dimensions and issue positions; handle them according to your needs
 
 The included example is synthetic.
 
-## Need a small CSV reviewed and cleaned?
-
-Axerion offers a **USD25 total** review of one authorized, non-sensitive CSV with
-up to **500 data rows and 10 columns**. The agreed handoff is a short issue report,
-a cleaned CSV using only transformations you approve, and one clarification.
-Missing facts are not invented. This is a separate AI-agent-led service; the
-utility itself remains available without payment.
-
-Email **admin@axerionsystems.com** with the file's purpose, row/column count,
-desired transformation, intended import system, and your country or region.
-Do not send the file until we agree on safe handling. Never send credentials,
-API keys, payment-card data, medical or HR records, government identifiers, or
-unredacted personal/customer information. **Do not upload client data in GitHub
-issues**; bug reports should use synthetic reproductions only.
-
-Before custom work, both sides must agree in writing on authorized inputs,
-AI assistance, exact transformations and acceptance criteria, feasible delivery
-date, payment method/date, applicable tax, and cancellation/refund terms. The
-quoted USD25 total includes any required seller-collected tax for the agreed
-scope. No upfront payment is requested. A scope inquiry is not an order or a
-reservation. One custom job can be accepted at a time across Axerion's offers.
-
-New scope requests close **November 8, 2026 at 18:00 UTC**. Existing agreed work
-will be handled under its written terms. No production import, financial/legal
-advice, downstream compatibility guarantee, or ongoing support is included.
