@@ -65,7 +65,5 @@
   $('demo').addEventListener('click',()=>{clear();show(inspect(demo,new TextEncoder().encode(demo).length));});
   $('reset').addEventListener('click',clear);
   $('download').addEventListener('click',()=>{if(!report)return;const url=URL.createObjectURL(new Blob([JSON.stringify(report,null,2)+'\n'],{type:'application/json'})); const a=document.createElement('a');a.href=url;a.download='csv-structural-report.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
-  function updateOffer() { const closed=Date.now()>=Date.parse('2026-11-08T18:00:00Z'); $('contact').hidden=closed; $('offer-state').textContent=closed?'Closed to new scope requests as of November 8, 2026 at 18:00 UTC. Existing agreed work follows its written terms.':'New scope requests close November 8, 2026 at 18:00 UTC.'; }
-  $('contact').addEventListener('click',event=>{if(Date.now()>=Date.parse('2026-11-08T18:00:00Z')){event.preventDefault();updateOffer();}});
-  updateOffer();setInterval(updateOffer,30000);document.addEventListener('visibilitychange',updateOffer);
+  // CSV business offer retired by owner request on October 27, 2026.
 })();
